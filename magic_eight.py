@@ -35,3 +35,4 @@ def ask_8_ball():
 			print("Signs point to yes")
 from random import randrange
 ask_8_ball()
+
