@@ -1,12 +1,12 @@
 # SI507-HW04-neilzhu
 
- names:
+ names: Lihan Zhu
  
- uniqnames: 
+ uniqnames: neilzhu
  
- section number:
+ section number: 002
  
- github ID:
+ github ID: neilzhu2
 
  names: Mengdan Yuan
  
