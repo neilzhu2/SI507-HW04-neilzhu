@@ -1,21 +1,18 @@
 def ask_8_ball():
-  isNotQ = 1
+	isNotQ = 1
+	while isNotQ:
+		question = input("What's your Y/N question?")
+		if question != "quit":
+			if question[-1] == "?":
+				isNotQ = 0
+				print (question)
+			else:
+				print("I’m sorry, I can only answer questions.")
+		else:
+			break
 
-  while isNotQ:	
-    question = input("What's your Y/N question?")
-
-    if question != "quit":
-    	if question[-1] == "?":
-    		isNotQ = 0
-    		return question
-    	else:
-    		print("I’m sorry, I can only answer questions.")
-
-    else:
-    	break
-
-  if isNotQ == 0:
-		number=randrange(1,21,1)
+	if isNotQ == 0:
+		number=randrange(1,11,1)
 		if(number == 1):
 			print("It is certain")
 		elif(number == 2):
@@ -36,4 +33,5 @@ def ask_8_ball():
 			print("Yes")
 		elif(number == 10):
 			print("Signs point to yes")
-
+from random import randrange
+ask_8_ball()
